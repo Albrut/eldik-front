@@ -1,12 +1,66 @@
-# React + Vite
+# Eldik Front - Система управления инцидентами
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание проекта
 
-Currently, two official plugins are available:
+Eldik Front - это веб-приложение для управления инцидентами, разработанное с использованием React и Vite. Система позволяет эффективно отслеживать и управлять инцидентами с помощью канбан-доски.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Основные возможности
 
-## Expanding the ESLint configuration
+- 📋 Канбан-доска для визуализации и управления инцидентами
+- 🔐 Система аутентификации с разделением прав доступа
+- 📝 Создание и редактирование инцидентов
+- 📊 Интеграция с Zabbix для мониторинга логов
+- 📁 Архивация завершенных инцидентов
+- 👥 Управление администраторами системы
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Технический стек
+
+- React
+- Vite
+- Material-UI (MUI)
+- REST API интеграция
+
+## Установка и запуск
+
+1. Клонируйте репозиторий:
+```bash
+git clone
+```
+
+2. Установите зависимости:
+```bash
+cd eldik-front
+npm install
+```
+
+3. Запустите проект в режиме разработки:
+```bash
+npm run dev
+```
+
+4. Для сборки проекта:
+```bash
+npm run build
+```
+
+## Структура проекта
+
+```
+src/
+├── components/       # React компоненты
+│   ├── IncidentCard.jsx
+│   ├── KanbanColumn.jsx
+│   └── ...
+├── pages/           # Страницы приложения
+│   ├── KanbanBoard.jsx
+│   └── Login.jsx
+└── services/        # Сервисы для работы с API
+    └── api.js
+```
+
+## Разработка
+
+- Приложение использует HMR (Hot Module Replacement) для быстрой разработки
+- ESLint настроен для поддержания качества кода
+- Поддерживается расширение функционала через плагины Vite
+
